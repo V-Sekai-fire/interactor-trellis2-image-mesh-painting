@@ -7,23 +7,23 @@ packaging convention. Facts from
 
 ## Model
 
-| Property | Value |
-|---|---|
-| Upstream | [microsoft/TRELLIS.2](https://github.com/microsoft/TRELLIS.2), `Trellis2TexturingPipeline` |
-| License | MIT |
+| Property   | Value                                                                                                                                                  |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Upstream   | [microsoft/TRELLIS.2](https://github.com/microsoft/TRELLIS.2), `Trellis2TexturingPipeline`                                                             |
+| License    | MIT                                                                                                                                                    |
 | Parameters | 0 — shares [`interactor-trellis2-image-to-textured-mesh`](https://github.com/weftspun/interactor-trellis2-image-to-textured-mesh)'s weights (RFD 0038) |
-| bf16 | 8.0 GB, and that is the RFD 0038 cost, not a second copy |
+| bf16       | 8.0 GB, and that is the RFD 0038 cost, not a second copy                                                                                               |
 
 ## Interface
 
 `POST /predict`:
 
-| Input | Type | Default | Note |
-|---|---|---|---|
-| `mesh` | Path/URL/base64 (GLB) | required | |
-| `image` | Path/URL/base64 | required | |
-| `texture_resolution` | int | 1024 | |
-| `seed` | int | -1 | |
+| Input                | Type                  | Default  | Note |
+| -------------------- | --------------------- | -------- | ---- |
+| `mesh`               | Path/URL/base64 (GLB) | required |      |
+| `image`              | Path/URL/base64       | required |      |
+| `texture_resolution` | int                   | 1024     |      |
+| `seed`               | int                   | -1       |      |
 
 Returns `{glb, layer, seed, stub}`.
 
