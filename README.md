@@ -12,7 +12,10 @@ The `contract` stage builds a stub server that answers with the interface's shap
 
 ```sh
 docker build --target contract -t interactor-trellis2-image-mesh-painting:contract .
+docker run --rm -p 8000:8000 interactor-trellis2-image-mesh-painting:contract
 ```
+
+The server listens on the port `PORT` names.
 
 The worker stage needs the base image built first.
 
