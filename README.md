@@ -21,4 +21,4 @@ The worker stage needs the base image built first.
 
 ## Licence
 
-This repository states no licence. The upstream model is MIT.
+MIT. See [LICENSE](LICENSE). The upstream model is MIT.
