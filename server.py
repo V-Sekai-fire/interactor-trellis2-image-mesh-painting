@@ -1,8 +1,8 @@
 """TRELLIS.2 mesh painting: an existing mesh + a reference image -> a
-textured mesh. RFD 0039.
+textured mesh. RFD66606-0039.
 
 Shares microsoft/TRELLIS.2-4B's weights with interactor-trellis2-image-to-
-textured-mesh (RFD 0038) -- no weights of its own, RFD 0039's whole reason
+textured-mesh (RFD66606-0038) -- no weights of its own, RFD66606-0039's whole reason
 for existing ("a second copy of those weights costs 8.0 GB and buys
 nothing"). The image build FROM's the base image and adds no weights.
 
@@ -95,8 +95,8 @@ def _run_upstream(mesh_path: Path, image_path: Path, glb: Path, args: dict) -> N
 
 
 def _to_usd(glb: Path, work: Path) -> Path:
-    """RFD 0053. Records the GLB as an asset path -- plain usd-core has no
-    glTF file-format plugin (RFD 0040's finding)."""
+    """RFD66606-0053. Records the GLB as an asset path -- plain usd-core has no
+    glTF file-format plugin (RFD66606-0040's finding)."""
     from pxr import Sdf, Usd, UsdGeom
 
     layer = work / "layer.usda"

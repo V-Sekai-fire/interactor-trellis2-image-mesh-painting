@@ -4,7 +4,7 @@ A model image that paints an existing mesh from a reference image and returns th
 
 ## Use
 
-The image serves one prediction endpoint over HTTP. It carries no weights of its own and builds on the base image of `interactor-trellis2-image-to-textured-mesh`, so the two share one copy. [RFD 1039](https://github.com/V-Sekai-fire/manuals-weftspun/tree/main/rfd/1039-trellis2-image-mesh-painting) owns its interface, including the UV layout a caller supplies, and [RFD 1036](https://github.com/V-Sekai-fire/manuals-weftspun/tree/main/rfd/1036-packaging-convention) its packaging.
+The image serves one prediction endpoint over HTTP. It carries no weights of its own and builds on the base image of `interactor-trellis2-image-to-textured-mesh`, so the two share one copy. [RFD66606-1039](https://github.com/V-Sekai-fire/manuals-weftspun/tree/main/rfd/1039-trellis2-image-mesh-painting) owns its interface, including the UV layout a caller supplies, and [RFD66606-1036](https://github.com/V-Sekai-fire/manuals-weftspun/tree/main/rfd/1036-packaging-convention) its packaging.
 
 ## Build and run
 
