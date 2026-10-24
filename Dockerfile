@@ -1,7 +1,7 @@
-# interactor-trellis2-image-mesh-painting -- vast.ai worker, RFD 0036/0039.
+# interactor-trellis2-image-mesh-painting -- vast.ai worker, RFD66606-0036/0039.
 #
-# Derives from interactor-trellis2-image-to-textured-mesh (RFD 0038). Adds no
-# weights -- RFD 0039's whole reason for existing: a second copy of TRELLIS.2's
+# Derives from interactor-trellis2-image-to-textured-mesh (RFD66606-0038). Adds no
+# weights -- RFD66606-0039's whole reason for existing: a second copy of TRELLIS.2's
 # 8.0 GB costs disk and buys nothing. This image is ~40 MB on top of the base.
 #
 # Build the base image first (weftspun/trellis2-base), then:
@@ -22,7 +22,7 @@ CMD ["python", "/app/server.py"]
 # The worker stage builds FROM the base image's worker stage, not from a bare
 # CUDA image -- it needs TRELLIS.2's Python package and weights already
 # present, and re-downloading them here would be exactly the duplication
-# RFD 0039 exists to avoid.
+# RFD66606-0039 exists to avoid.
 FROM weftspun/trellis2-base AS worker
 
 WORKDIR /app
